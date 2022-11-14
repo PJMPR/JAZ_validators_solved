@@ -14,6 +14,11 @@ public class ValidationResult<T> {
         return validatedObject;
     }
 
+    public <C> C  doSomething(C obj){
+        var x = new ValidationResult<C>();
+        return obj;
+    }
+
     public void setValidatedObject(T validatedObject) {
         this.validatedObject = validatedObject;
     }

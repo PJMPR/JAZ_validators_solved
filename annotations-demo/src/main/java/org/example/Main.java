@@ -153,7 +153,7 @@ public class Main {
 //                .findFirst()
 //                .orElse(null);
 //
-//        if(!validationMessagesForNumber.equalsIgnoreCase("regex error"))
+//        if(!validationMessagesForNumber.equalsIgnoreCase("email should be in correct format"))
 //            throw new Exception("złe wiadomości o błędzie");
 
     }
