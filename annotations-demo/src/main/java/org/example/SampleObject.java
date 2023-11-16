@@ -1,16 +1,20 @@
 package org.example;
 
+import org.example.validation.annotations.NotNull;
+import org.example.validation.annotations.Range;
+import org.example.validation.annotations.Regex;
+
 public class SampleObject {
 
-    //@NotNull(message="pole jest null")
+    @NotNull(message="pole jest null")
     private String name;
 
 
-    //@NotNull
-    //@Regex(pattern = "^\\w+@[a-zA-Z_]+?\\.[a-zA-Z]{2,3}$", message = "email should be in correct format")
+    @NotNull
+    @Regex(pattern = "^\\w+@[a-zA-Z_]+?\\.[a-zA-Z]{2,3}$", message = "email should be in correct format")
     private String email;
 
-    //@Range(min=0, max=10)
+    @Range(min=0, max=10)
     private int number;
 
     public SampleObject(String name, String email, int number) {
